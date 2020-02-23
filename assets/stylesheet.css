@@ -1,1 +1,200 @@
-/* noop */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+  border: 0;
+  color: #212121;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+main {
+  padding: 0 1rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.heading-1,
+.heading-2,
+.quote__author {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+.heading-3,
+.text,
+.footer,
+.quote,
+.quote__status {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.heading-1 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.heading-2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.heading-3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.text {
+  font-size: 0.875rem;
+}
+
+.list {
+ display: grid;
+ grid-template-columns: repeat(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
+.card {
+  display: grid;
+}
+
+.card__image {
+  height: 100%;
+  width: 100%;
+}
+
+.card__information {
+  border-bottom: 1px solid #212121;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-rows: 60px;
+}
+
+.card__details {
+  border: 1px solid #212121;
+  margin-top: 1rem;
+}
+
+.card__content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.card__section {
+  border-bottom: 1px solid #212121;
+  padding: 0.25rem 0.5rem;
+}
+
+.card__section:nth-child(odd) {
+  border-right: 1px solid #212121;
+}
+
+.card__description {
+  padding: 1rem;
+}
+
+.recommendations__list {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .recommendations__list {
+    width: 50%;
+  }
+}
+
+.recommendations__item {
+  border-bottom: 1px solid #212121;
+  padding: 2.5rem 0;
+}
+
+.recommendations__item:last-child {
+  border-bottom: none;
+}
+
+.quote,
+.quote__status {
+  font-size: 1rem;
+}
+
+.quote__author {
+  font-size: 1.125rem;
+}
+
+.quote {
+  padding-bottom: 1.5rem;
+}
+
+.footer {
+  background: #212121;
+  padding: 1.75rem 0 1.75rem 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 2.5rem 0 2.5rem 1rem;
+  }
+}
+
+.footer__item {
+  margin-bottom: 1.25rem;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
